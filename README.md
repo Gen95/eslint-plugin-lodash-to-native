@@ -2,7 +2,7 @@
 
 Плагин находит использование функции `_.map`, например `_.map(collection, fn)`, и, предлагает заменить его на использование нативного `Array#map`.
 
-Examples of **incorrect** code for this rule:
+Пример **некорректного** кода для правила:
 
 ```js
 
@@ -10,7 +10,7 @@ _.map(arr, function (item) {return item});
 
 ```
 
-Examples of **correct** code for this rule:
+Пример **корректного** кода для правила:
 
 ```js
 
@@ -18,7 +18,22 @@ arr.map(function (item) {return item});
 
 ```
 
-### Options
+### Установка
+```js
+npm install -S github.com/Gen95/eslint-plugin-lodash-to-native.git
+```
+
+и подключение в  .eslintrc.js так:
+```js
+"plugins": [
+"lodash-to-native"
+],
+"rules": {
+"lodash-to-native/map": "warn"
+},
+```
+
+### Опции
 
 - При выполнении "run gulp" находит функции `_.map` и уведомляет о том, что их можно заменить
 - При выполнении "run gulp --fix" автоматически производит замену
