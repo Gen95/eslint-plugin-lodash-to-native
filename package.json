@@ -1,13 +1,12 @@
 {
-  "name": "eslint-plugin-gdfgdfg",
+  "name": "eslint-plugin-lodash-to-native",
   "version": "0.0.0",
-  "description": "dfgdfg",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "fgdfdf",
+  "author": "Evgeny Trushkin",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
